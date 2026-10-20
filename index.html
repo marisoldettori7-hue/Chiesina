@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizzeria Chiesina — Pizza napoletana cotta a legna</title>
+  <meta name="description" content="Pizzeria Chiesina: pizza a lunga lievitazione cotta nel forno a legna, ingredienti locali, asporto e prenotazioni.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">Pizzeria <span>Chiesina</span></a>
+      <button class="nav-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#menu">Menù</a></li>
+        <li><a href="#orari">Orari</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#prenota" class="btn btn-small">Prenota</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Dal 1998 · Forno a legna</p>
+        <h1>La vera pizza,<br>come una volta.</h1>
+        <p class="hero-text">Impasto a lunga lievitazione, pomodoro San Marzano, mozzarella fresca e tanta passione. Vieni a trovarci o ordina da asporto.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">Scopri il menù</a>
+          <a href="tel:+390000000000" class="btn btn-outline">Chiama e ordina</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SIAMO -->
+    <section class="section" id="chi-siamo">
+      <div class="container about">
+        <div class="about-text">
+          <p class="eyebrow">La nostra storia</p>
+          <h2>Una famiglia, un forno, mille pizze</h2>
+          <p>Tutto è cominciato con un piccolo forno a legna e una ricetta di famiglia. Oggi, come allora, prepariamo ogni giorno il nostro impasto con farine macinate a pietra e lo lasciamo riposare per almeno 48 ore: il risultato è una pizza leggera, digeribile e fragrante.</p>
+          <p>Scegliamo ingredienti stagionali e di produttori locali, perché crediamo che la qualità si senta a ogni morso.</p>
+          <ul class="features">
+            <li><span>🔥</span> Forno a legna a 450°</li>
+            <li><span>⏳</span> Lievitazione 48 ore</li>
+            <li><span>🌾</span> Farine macinate a pietra</li>
+            <li><span>🌱</span> Opzioni vegane e senza glutine</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="pizza-art">
+            <div class="crust"><div class="sauce">
+              <i class="basil b1"></i><i class="basil b2"></i><i class="basil b3"></i>
+              <i class="mozz m1"></i><i class="mozz m2"></i><i class="mozz m3"></i><i class="mozz m4"></i><i class="mozz m5"></i>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Il nostro menù</p>
+          <h2>Scegli la tua preferita</h2>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Categorie del menù">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="classiche">Classiche</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="speciali">Speciali</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="antipasti">Antipasti</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="dolci">Dolci & Bevande</button>
+        </div>
+
+        <div class="menu-panel active" id="classiche" role="tabpanel">
+          <article class="menu-item"><div><h3>Marinara</h3><p>Pomodoro, aglio, origano, olio extravergine</p></div><span class="price">€ 5,50</span></article>
+          <article class="menu-item"><div><h3>Margherita</h3><p>Pomodoro, fior di latte, basilico</p></div><span class="price">€ 6,50</span></article>
+          <article class="menu-item"><div><h3>Napoli</h3><p>Pomodoro, fior di latte, acciughe, capperi, origano</p></div><span class="price">€ 7,50</span></article>
+          <article class="menu-item"><div><h3>Diavola</h3><p>Pomodoro, fior di latte, salame piccante</p></div><span class="price">€ 8,00</span></article>
+          <article class="menu-item"><div><h3>Capricciosa</h3><p>Pomodoro, fior di latte, prosciutto cotto, funghi, carciofi, olive</p></div><span class="price">€ 9,00</span></article>
+          <article class="menu-item"><div><h3>Quattro formaggi</h3><p>Fior di latte, gorgonzola, fontina, parmigiano</p></div><span class="price">€ 8,50</span></article>
+          <article class="menu-item"><div><h3>Ortolana <span class="tag">veg</span></h3><p>Pomodoro, fior di latte, verdure grigliate di stagione</p></div><span class="price">€ 8,50</span></article>
+          <article class="menu-item"><div><h3>Prosciutto e funghi</h3><p>Pomodoro, fior di latte, prosciutto cotto, funghi champignon</p></div><span class="price">€ 8,50</span></article>
+        </div>
+
+        <div class="menu-panel" id="speciali" role="tabpanel" hidden>
+          <article class="menu-item"><div><h3>Chiesina</h3><p>Fior di latte, salsiccia toscana, friarielli, provola affumicata</p></div><span class="price">€ 10,50</span></article>
+          <article class="menu-item"><div><h3>Bufalina</h3><p>Pomodorini del piennolo, mozzarella di bufala DOP a crudo, basilico</p></div><span class="price">€ 10,00</span></article>
+          <article class="menu-item"><div><h3>Tartufata</h3><p>Fior di latte, crema di tartufo, funghi porcini, scaglie di pecorino</p></div><span class="price">€ 12,00</span></article>
+          <article class="menu-item"><div><h3>Crudo e burrata</h3><p>Pomodoro, prosciutto crudo di Parma, burrata, rucola</p></div><span class="price">€ 11,50</span></article>
+          <article class="menu-item"><div><h3>Mortadella e pistacchio</h3><p>Fior di latte, mortadella, stracciatella, granella di pistacchio</p></div><span class="price">€ 11,00</span></article>
+          <article class="menu-item"><div><h3>Vegana <span class="tag">vegan</span></h3><p>Pomodoro, verdure di stagione, olive taggiasche, origano</p></div><span class="price">€ 9,00</span></article>
+        </div>
+
+        <div class="menu-panel" id="antipasti" role="tabpanel" hidden>
+          <article class="menu-item"><div><h3>Fritto misto</h3><p>Crocchè, arancini, frittatine di pasta e olive ascolane</p></div><span class="price">€ 8,00</span></article>
+          <article class="menu-item"><div><h3>Bruschette</h3><p>Pomodoro fresco, aglio e basilico (3 pz)</p></div><span class="price">€ 5,00</span></article>
+          <article class="menu-item"><div><h3>Tagliere toscano</h3><p>Salumi e formaggi locali con focaccia calda</p></div><span class="price">€ 14,00</span></article>
+          <article class="menu-item"><div><h3>Focaccia</h3><p>Olio extravergine, rosmarino e sale grosso</p></div><span class="price">€ 4,00</span></article>
+        </div>
+
+        <div class="menu-panel" id="dolci" role="tabpanel" hidden>
+          <article class="menu-item"><div><h3>Tiramisù della casa</h3><p>Ricetta classica con mascarpone e caffè</p></div><span class="price">€ 5,00</span></article>
+          <article class="menu-item"><div><h3>Pizza alla Nutella</h3><p>Da dividere, con granella di nocciole</p></div><span class="price">€ 7,00</span></article>
+          <article class="menu-item"><div><h3>Bibite in lattina</h3><p>Coca-Cola, Fanta, Sprite, tè freddo</p></div><span class="price">€ 2,50</span></article>
+          <article class="menu-item"><div><h3>Birra artigianale</h3><p>Bionda o rossa, 0,33 l</p></div><span class="price">€ 5,00</span></article>
+          <article class="menu-item"><div><h3>Vino della casa</h3><p>Rosso o bianco, ¼ l</p></div><span class="price">€ 4,50</span></article>
+        </div>
+
+        <p class="menu-note">Impasto senza glutine disponibile su richiesta (+ € 2,00). Per allergie e intolleranze chiedi al personale.</p>
+      </div>
+    </section>
+
+    <!-- ORARI -->
+    <section class="section" id="orari">
+      <div class="container hours-grid">
+        <div>
+          <p class="eyebrow">Quando trovarci</p>
+          <h2>Orari di apertura</h2>
+          <p id="open-status" class="open-status"></p>
+        </div>
+        <table class="hours" aria-label="Orari di apertura">
+          <tbody>
+            <tr data-day="1"><th>Lunedì</th><td>Chiuso</td></tr>
+            <tr data-day="2"><th>Martedì</th><td>19:00 – 23:00</td></tr>
+            <tr data-day="3"><th>Mercoledì</th><td>19:00 – 23:00</td></tr>
+            <tr data-day="4"><th>Giovedì</th><td>19:00 – 23:00</td></tr>
+            <tr data-day="5"><th>Venerdì</th><td>19:00 – 23:30</td></tr>
+            <tr data-day="6"><th>Sabato</th><td>12:00 – 14:30 · 19:00 – 23:30</td></tr>
+            <tr data-day="0"><th>Domenica</th><td>12:00 – 14:30 · 19:00 – 23:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PRENOTA -->
+    <section class="section section-dark" id="prenota">
+      <div class="container booking">
+        <div class="booking-text">
+          <p class="eyebrow">Prenota un tavolo</p>
+          <h2>Ti aspettiamo!</h2>
+          <p>Compila il modulo: ti si aprirà WhatsApp con il messaggio già pronto. Ti confermeremo la prenotazione il prima possibile.</p>
+          <p>Preferisci chiamare? <a href="tel:+390000000000">+39 000 000 0000</a></p>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <label>Nome<input type="text" name="nome" required autocomplete="name"></label>
+          <label>Telefono<input type="tel" name="telefono" required autocomplete="tel"></label>
+          <div class="form-row">
+            <label>Data<input type="date" name="data" required></label>
+            <label>Ora<input type="time" name="ora" required min="12:00" max="23:00"></label>
+          </div>
+          <label>Persone
+            <select name="persone" required>
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8+</option>
+            </select>
+          </label>
+          <label>Note<textarea name="note" rows="3" placeholder="Allergie, seggiolone, occasioni speciali…"></textarea></label>
+          <button type="submit" class="btn">Invia prenotazione</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="section" id="contatti">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Dove siamo</p>
+          <h2>Contatti</h2>
+          <ul class="contact-list">
+            <li><span>📍</span> Via Roma 1, 51013 Chiesina Uzzanese (PT)</li>
+            <li><span>📞</span> <a href="tel:+390000000000">+39 000 000 0000</a></li>
+            <li><span>✉️</span> <a href="mailto:info@pizzeriachiesina.it">info@pizzeriachiesina.it</a></li>
+            <li><span>📷</span> <a href="https://instagram.com/" target="_blank" rel="noopener">@pizzeriachiesina</a></li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe title="Mappa della pizzeria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Chiesina+Uzzanese&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="logo">Pizzeria <span>Chiesina</span></p>
+      <p>© <span id="year"></span> Pizzeria Chiesina · P.IVA 00000000000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
